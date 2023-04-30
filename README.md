@@ -47,7 +47,7 @@ using var worker = new TemporalWorker(
     client,
     new TemporalWorkerOptions
     {
-        Activities = ActivityProxyHelper.DiscoverAndRegisterActivityProxies(serviceProvider, typeof(MyActivityImpl).Assembly).ToList(),
+        Activities = ActivityProxyHelper.DiscoverAndRegisterActivityProxies(serviceProvider, typeof(OrderProcessingActivities).Assembly).ToList(),
     });
 ```
 
