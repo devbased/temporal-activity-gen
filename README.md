@@ -32,7 +32,12 @@ public interface IOrderProcessingActivities
 }
 ```
 
-### 3. Register the generated proxy classes with the TemporalWorker
+### 3. Register Activity Interface implementation in DI container
+```csharp
+services.AddScoped<IOrderProcessingActivities, OrderProcessingActivities>();
+```
+
+### 4. Register the generated proxy classes with the TemporalWorker
 
 Use the `ActivityProxyHelper` class to discover and register the generated proxy classes with the TemporalWorker.
 
