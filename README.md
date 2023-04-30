@@ -10,7 +10,7 @@ The proxy classes enable dependency injection for your activities, making it eas
 
 ### 1. Add the source generator to your project
 
-Add the `Temporal.ActivityProxyGenerator` package to your project for example using local nuget feed.
+Add the `TemporalActivityGen` package to your project for example using local nuget feed.
 
 ### 2. Annotate your interfaces and activity methods
 
