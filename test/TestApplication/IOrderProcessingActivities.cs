@@ -5,15 +5,12 @@ using Temporalio.Activities;
 
 namespace TestApplication.Activities
 {
-
     [GenerateActivityProxy]
     public interface IShippingActivities
     {
         [Activity("custom-activity-name")]
         public Task<ShipItemsOutput> ShipItems(ShipItemsInput input);
     }
-
-
 }
 
 
@@ -30,7 +27,6 @@ namespace TestApplication
         [Activity]
         public Task NotifyOrderProcessed(NotifyOrderProcessedInput input);
     }
-
 
     public class ShipItemsInput
     {
