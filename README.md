@@ -1,6 +1,7 @@
 # Activity Proxy Generator for Temporal .NET SDK
 
-**NOTE: This project is just a prototype and is not supported by the Temporal team.**
+**NOTE: This repository has been archived. The decision to archive this repository is based on prioritizing the use of the official interceptors approach provided by the Temporal team.
+If you are interested in exploring the official interceptors approach, you can refer to the Temporal samples repository: https://github.com/temporalio/samples-dotnet**
 
 Source generator for the Temporal .NET SDK that generates proxy classes for interfaces containing activity methods.
 The proxy classes enable dependency injection for your activities, making it easier to manage dependencies and services.
